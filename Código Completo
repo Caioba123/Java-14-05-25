@@ -125,3 +125,97 @@ public class Pagamentos {
 }
 
 
+
+package main;
+
+import java.util.Scanner;
+
+public class Pagamentos {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Formas de Pagamento:");
+        System.out.println("Pix");
+        System.out.println("Cartão Crédito");
+        System.out.println("Cartão Débito");
+        System.out.println("------------------------------------");
+        System.out.println("Escolha a sua Forma de Pagamento");
+        String pagamento = scanner.nextLine();
+
+       
+        switch (pagamento.toLowerCase()) {
+            case "pix":
+                System.out.println("Para Pix, informe a chave PIX:");
+                String chavePix = scanner.nextLine();
+                System.out.println("Chave PIX: " + chavePix);
+                System.out.println("Pagamento Realizado Com Sucesso!");
+                break;
+
+            case "cartão crédito":
+                System.out.println("Para Cartão Crédito, informe os seguintes dados:");
+                System.out.print("Nome do Titular: ");
+                String nomeTitularCredito = scanner.nextLine();
+                System.out.print("Número do Cartão: ");
+                String numeroCartaoCredito = scanner.nextLine();
+                System.out.print("Data de Validade (MM/AA): ");
+                String validadeCredito = scanner.nextLine();
+                System.out.print("Código de Segurança (CVV): ");
+                String cvvCredito = scanner.nextLine();
+                System.out.println("Cartão Crédito:");
+                System.out.println("Nome: " + nomeTitularCredito);
+                System.out.println("Número do Cartão: " + numeroCartaoCredito);
+                System.out.println("Data de Validade: " + validadeCredito);
+                System.out.println("Código de Segurança: " + cvvCredito);
+                System.out.println("Pagamento Realizado Com Sucesso!");
+                break;
+
+            case "cartão débito":
+                System.out.println("Para Cartão Débito, informe os seguintes dados:");
+                System.out.print("Nome do Titular: ");
+                String nomeTitularDebito = scanner.nextLine();
+                System.out.print("Número do Cartão: ");
+                String numeroCartaoDebito = scanner.nextLine();
+                System.out.print("Data de Validade Ex: (09/31): ");
+                String validadeDebito = scanner.nextLine();
+                System.out.print("Código de Segurança (CVV): ");
+                String cvvDebito = scanner.nextLine();
+                System.out.println("Cartão Débito:");
+                System.out.println("Nome: " + nomeTitularDebito);
+                System.out.println("Número do Cartão: " + numeroCartaoDebito);
+                System.out.println("Data de Validade: " + validadeDebito);
+                System.out.println("Código de Segurança: " + cvvDebito);
+                System.out.println("Pagamento Realizado Com Sucesso!");
+                break;
+
+            default:
+                System.out.println("Forma de pagamento não reconhecida. Tente novamente.");
+        }
+	        
+	}
+
+}
+
+
+
+package main;
+
+import java.util.Scanner;
+
+public class Confirmação {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Coloque o valor da compra:");
+        int valorCompra = scanner.nextInt();
+
+        if (valorCompra >= 50) { 
+            System.out.println("Compra Realizada Com Sucesso!");
+        } else {
+            System.out.println("Pagamento Não Realizado. Tente Novamente");
+        }
+
+    }
+}
