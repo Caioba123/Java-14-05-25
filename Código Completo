@@ -1,0 +1,127 @@
+package main;
+import java.util.Scanner;
+public class Login {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+
+        String emailCorreto = "caioba123@gmail.com";
+        String senhaCorreta = "Caioba123";
+
+        System.out.println("Digite seu Email:");
+        String email = scanner.nextLine();
+
+        System.out.println("Digite sua Senha:");
+        String senha = scanner.nextLine();
+
+        if (email.equals(emailCorreto) && senha.equals(senhaCorreta)) {
+            System.out.println("Usuário Cadastrado com Sucesso!");
+        } else {
+            System.out.println("Email ou senha incorretos.");
+        }
+	
+	}
+
+}
+
+
+package main;
+
+import java.util.Scanner;
+
+public class Produtos {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Aqui está a nossa lista de produtos!");
+        System.out.println("------------------------------------");
+        System.out.println("1 espátula de silicone");
+        System.out.println("1 colher de pau ou silicone");
+        System.out.println("2 peneiras (uma média e uma pequena)");
+        System.out.println("1 tábua de corte; (as de vidro são mais higiênicas)");
+        System.out.println("1 rolo para abrir massas (plástico ou madeira)");
+        System.out.println("1 pinça");
+        System.out.println("1 conjunto de medidores");
+        System.out.println("1 xícara de medidas");
+        System.out.println("1 saca-rolhas");
+        System.out.println("1 abridor de latas");
+        System.out.println("1 abridor de garrafas");
+        System.out.println("1 tesoura");
+        System.out.println("1 ralador");
+        System.out.println("1 funil");
+        System.out.println("1 espremedor de alho");
+        System.out.println("3 panelas (uma média, uma pequena e uma grande)");
+        System.out.println("1 panela de pressão");
+        System.out.println("1 frigideira média antiaderente com tampa");
+        System.out.println("1 leiteira ou caneca para ferver líquidos");
+        System.out.println("2 formas para pizza");
+        System.out.println("1 forma retangular");
+        System.out.println("1 forma redonda");
+        System.out.println("1 forma redonda com furo no meio");
+        System.out.println("Conjunto de facas (faca grande para corte de carnes, faca média, faca com serra para pães, faca com ponta fina para legumes)");
+        System.out.println("2 conchas (uma grande, uma média)");
+        System.out.println("1 escumadeira");
+        System.out.println("1 garfão para preparo de alimentos, especialmente carnes");
+        System.out.println("1 escorredor de macarrão");
+        System.out.println("Formas de gelo (caso sua geladeira não possua)");
+        System.out.println("2 pegadores de panela");
+        System.out.println("1 luva de silicone");
+        System.out.println("Coador de café");
+        System.out.println("1 chaleira");
+        System.out.println("----------------------");
+        System.out.println("Escolha algum produto!");
+        String produto = scanner.nextLine();
+        System.out.println("----------------------");
+        System.out.println("Produto Escolhido com Sucesso!");
+      
+	}
+    }
+
+
+
+package main;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		
+    Scanner scanner = new Scanner(System.in);
+		
+		
+		System.out.println("Olá, Seja Bem-Vindo ao nosso sistema!");
+		System.out.println("Deseja continuar? se sim coloque o seu Nome");
+		String nome = scanner.nextLine();
+		System.out.println("Olá, " + nome + " Seja Bem Vindo!");
+		
+		
+
+	}
+
+}
+
+
+
+package main;
+
+import java.util.Scanner;
+
+public class Pagamentos {
+
+	public static void main(String[] args) {
+		
+		  Scanner scanner = new Scanner(System.in);
+
+	        System.out.println("Formas de Pagamento:");
+	        System.out.println("Pix");
+	        System.out.println("Cartão Crédito");
+	        System.out.println("Cartão Débito");
+	        System.out.println("------------------------------------");
+	        System.out.println("Escolha a sua Forma de Pagamento");
+	        String pagamento = scanner.nextLine();
+	        
+	}
+
+}
+
+
